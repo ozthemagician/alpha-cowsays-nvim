@@ -742,7 +742,12 @@ local function draw_rectangle(h_padding, v_padding)
 end
 
 function M.cowsays()
-  return table.concat({ draw_rectangle(2, 1), cow }, "\n")
+  local r = table.concat({ draw_rectangle(2, 1), cow }, "\n")
+	local t = {}
+	for line in r:gmatch("[^\n]+") do
+		table.insert(t, line)
+	end
+	return t
 end
 
 return M
