@@ -24,3 +24,7 @@ return {
   end,
 }
 ```
+
+Output:
+
+<img width="757" alt="image" src="https://github.com/ozthemagician/alpha-cowsays-nvim/assets/1517532/d533ec64-1f1f-448e-aa34-68867215c388">
